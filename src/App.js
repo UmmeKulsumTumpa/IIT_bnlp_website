@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Newsletter from './components/Newsletter';
 import Publications from './components/Publications';
+import Team from './components/Meet_with_the_team';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Analytics />
       <Newsletter />
       <Publications />
+      <Team />
       <Cards />
       <Footer />
     </div>
