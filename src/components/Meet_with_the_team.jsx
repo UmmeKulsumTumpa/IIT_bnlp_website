@@ -10,16 +10,27 @@ const TeamMember = ({ name, position, email, github, linkedin, image }) => {
   const [showDescription, setShowDescription] = useState(false);
 
   return (
-    <div className="flex items-center mb-8 md:w-1/2 lg:w-1/3 cursor-pointer" onClick={() => setShowDescription(!showDescription)}>
-      <img src={image} alt={name} className="w-32 h-32 rounded-full mr-6" />
+    <div className="flex items-center mb-8 md:w-1/2 lg:w-1/3 relative">
+      <img
+        src={image}
+        alt={name}
+        className="w-32 h-32 rounded-full cursor-pointer mr-4"
+        onClick={() => setShowDescription(!showDescription)}
+      />
       <div>
-        <h2 className="text-xl font-semibold mr-4">{name}</h2>
+        <h2
+          className={`text-xl font-semibold ${showDescription ? 'mb-2' : 'mb-0'}`}
+          onClick={() => setShowDescription(!showDescription)}
+          style={{ cursor: 'pointer' }}
+        >
+          {name}
+        </h2>
         {showDescription && (
-          <div className="description-container mt-2 bg-gray-100 p-4 rounded-lg">
-            <p className="text-gray-800 mb-2 flex items-center"><i className="fas fa-user mr-2"></i>Designation: {position}</p>
-            <p className="text-gray-800 mb-2 flex items-center"><i className="fas fa-envelope mr-2"></i>Email: {email}</p>
-            <p className="text-gray-800 mb-2 flex items-center"><i className="fab fa-github mr-2"></i>Github: <a href={github} className="text-blue-600 hover:underline">{github}</a></p>
-            <p className="text-gray-800 mb-2 flex items-center"><i className="fab fa-linkedin mr-2"></i>LinkedIn: <a href={linkedin} className="text-blue-600 hover:underline">{linkedin}</a></p>
+          <div className="bg-gray-100 p-4 rounded-lg mt-2">
+            <p className="text-gray-800 mb-2"><i className="fas fa-user mr-2"></i>Position: {position}</p>
+            <p className="text-gray-800 mb-2"><i className="fas fa-envelope mr-2"></i>Email: {email}</p>
+            <p className="text-gray-800 mb-2"><i className="fab fa-github mr-2"></i>Github: <a href={github} className="text-blue-600 hover:underline">{github}</a></p>
+            <p className="text-gray-800 mb-2"><i className="fab fa-linkedin mr-2"></i>LinkedIn: <a href={linkedin} className="text-blue-600 hover:underline">{linkedin}</a></p>
           </div>
         )}
       </div>
@@ -31,7 +42,7 @@ const Team = () => {
   return (
     <div className="container mx-auto py-10 bg-white">
       <h1 className="text-3xl font-bold text-center mb-8">Meet the Team</h1>
-      <div className="flex flex-row md:flex-wrap">
+      <div className="flex flex-row md:flex-wrap justify-center">
         {/* Member 1 */}
         <TeamMember
           name="Dr Ahmedul Kabir"
