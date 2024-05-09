@@ -14,9 +14,9 @@ const Navbar = () => {
       <ul className='hidden md:flex space-x-6 text-xl'>
         <li>Home</li>
         <li>Goal</li>
-        <li>Publications</li>
+        <a href="#publications">Publications</a>
         <li>International Collaborations</li>
-        <li>Meet with the Team!</li>
+        <a href="#team">Meet with the Team!</a>
         <li>Latest in BLP</li>
       </ul>
       <div onClick={handleNav} className='block md:hidden'>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
-import backgroundImage from '../assets/heroBackground.gif';
+import backgroundImage from '../assets/net.jpg';
 const Hero = () => {
   return (
     <div className='text-white' style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>

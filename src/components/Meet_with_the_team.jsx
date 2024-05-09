@@ -40,65 +40,69 @@ const TeamMember = ({ name, position, email, github, linkedin, image }) => {
 
 const Team = () => {
   return (
-    <div className="container mx-auto py-10 bg-white">
-      <h1 className="text-3xl font-bold text-center mb-8">Meet the Team</h1>
-      <div className="flex flex-row md:flex-wrap justify-center">
-        {/* Member 1 */}
-        <TeamMember
-          name="Dr Ahmedul Kabir"
-          position="Professor"
-          email="person1@example.com"
-          github="https://github.com/person1"
-          linkedin="https://www.linkedin.com/in/ahmedul-kabir-90469134/"
-          image={Person1Image}
-        />
-        {/* Member 2 */}
-        <TeamMember
-          name="Shebuty Rayana"
-          position="Software Engineer"
-          email="person2@example.com"
-          github="https://github.com/person2"
-          linkedin="https://www.linkedin.com/in/shebuti-rayana/"
-          image={Person2Image}
-        />
-        {/* Member 3 */}
-        <TeamMember
-          name="Zarif Masud"
-          position="Project Manager"
-          email="person3@example.com"
-          github="https://github.com/person3"
-          linkedin="https://www.linkedin.com/in/zarifmasud/"
-          image={Person3Image}
-        />
-        {/* Member 4 */}
-        <TeamMember
-          name="Abhijit Paul"
-          position="Software Developer"
-          email="person4@example.com"
-          github="https://github.com/person4"
-          linkedin="https://www.linkedin.com/in/abj-paul/"
-          image={Person4Image}
-        />
-        {/* Member 5 */}
-        <TeamMember
-          name="Sharif Mohammad Abdullah"
-          position="UI/UX Designer"
-          email="person5@example.com"
-          github="https://github.com/person5"
-          linkedin="https://www.linkedin.com/in/sharifmabdullah/"
-          image={Person5Image}
-        />
-        {/* Member 6 */}
-        <TeamMember
-          name="Mashiat Amin Farin"
-          position="Frontend Developer"
-          email="person6@example.com"
-          github="https://github.com/person6"
-          linkedin="https://www.linkedin.com/in/mashiataminfarin/"
-          image={Person6Image}
-        />
+    <section id="team">
+
+      <div className="container mx-auto py-10 bg-white">
+        <h1 className="text-3xl font-bold text-center mb-8">Meet the Team</h1>
+        <div className="flex flex-row md:flex-wrap justify-center">
+          {/* Member 1 */}
+          <TeamMember
+            name="Dr Ahmedul Kabir"
+            position="Professor"
+            email="person1@example.com"
+            github="https://github.com/person1"
+            linkedin="https://www.linkedin.com/in/ahmedul-kabir-90469134/"
+            image={Person1Image}
+          />
+          {/* Member 2 */}
+          <TeamMember
+            name="Shebuty Rayana"
+            position="Software Engineer"
+            email="person2@example.com"
+            github="https://github.com/person2"
+            linkedin="https://www.linkedin.com/in/shebuti-rayana/"
+            image={Person2Image}
+          />
+          {/* Member 3 */}
+          <TeamMember
+            name="Zarif Masud"
+            position="Project Manager"
+            email="person3@example.com"
+            github="https://github.com/person3"
+            linkedin="https://www.linkedin.com/in/zarifmasud/"
+            image={Person3Image}
+          />
+          {/* Member 4 */}
+          <TeamMember
+            name="Abhijit Paul"
+            position="Software Developer"
+            email="person4@example.com"
+            github="https://github.com/person4"
+            linkedin="https://www.linkedin.com/in/abj-paul/"
+            image={Person4Image}
+          />
+          {/* Member 5 */}
+          <TeamMember
+            name="Sharif Mohammad Abdullah"
+            position="UI/UX Designer"
+            email="person5@example.com"
+            github="https://github.com/person5"
+            linkedin="https://www.linkedin.com/in/sharifmabdullah/"
+            image={Person5Image}
+          />
+          {/* Member 6 */}
+          <TeamMember
+            name="Mashiat Amin Farin"
+            position="Frontend Developer"
+            email="person6@example.com"
+            github="https://github.com/person6"
+            linkedin="https://www.linkedin.com/in/mashiataminfarin/"
+            image={Person6Image}
+          />
+        </div>
       </div>
-    </div>
+    </section>
+
   );
 };
 
