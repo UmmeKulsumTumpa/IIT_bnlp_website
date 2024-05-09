@@ -1,8 +1,10 @@
 import React from 'react';
 
+
 const Publications = () => {
   return (
-    <div className="w-full bg-white py-16 px-4">
+    <section id="publications">
+      <div className="w-full bg-white py-16 px-4">
       <div className="max-w-[1240px] mx-auto">
         <h1 className="text-3xl font-bold mb-8">Publications</h1>
         
@@ -23,6 +25,7 @@ const Publications = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
